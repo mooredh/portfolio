@@ -1,0 +1,79 @@
+.home-body {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+
+.home-body .question {
+    font-family: 'Sansation', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    flex: 1;
+}
+
+.home-options-container {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-options-container .home-option {
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    font-size: 85px;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    opacity: 1;
+}
+
+.home-options-container:hover .home-option {
+    font-size: 80px;
+    opacity: 0.2;
+}
+
+.home-options-container .home-option:hover {
+    cursor: pointer;
+    font-size: 100px;
+    opacity: 1;
+}
+
+.artist:hover {
+    color: #04AFF8;
+}
+
+.programmer:hover {
+    color: #FE3131;
+}
+
+@media only screen and (max-width: 736px),
+screen and (max-height: 500px) {
+    .home-body .question {
+        font-size: 10px;
+    }
+
+    .home-options-container .home-option {
+        font-size: 40px;
+    }
+
+    .home-options-container:hover .home-option {
+        font-size: 35px;
+    }
+
+    .home-options-container .home-option:hover {
+        font-size: 45px;
+    }
+
+    .home-options-container {
+        flex: 2;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+}

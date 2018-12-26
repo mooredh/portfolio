@@ -1,0 +1,39 @@
+.app-footer {
+    display: flex;
+    justify-content: space-between;
+    height: 17vh;
+    align-items: center;
+    color: #fff;
+}
+
+.envelope {
+    margin-right: 3%;
+    display: flex;
+    background-color: #04AFF8;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+}
+
+.copyright {
+    margin-left: 3%;
+    display: flex;
+    align-items: center;
+}
+
+.envelope:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
