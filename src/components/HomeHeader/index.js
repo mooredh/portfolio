@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa'
 import './style.css'
+import { Link } from 'react-router-dom'
+
 
 export default class HomeHeader extends Component {
     render() {
@@ -21,9 +23,9 @@ export default class HomeHeader extends Component {
                     </div>
                 </div>
                 <div className="header-title">MOORE DAGOGO-HART</div>
-                <div className="about-button-container">
+                <Link to='/about' className="about-button-container">
                     <div className="about-button" style={{ backgroundColor: this.props.theme }}>ABOUT</div>
-                </div>
+                </Link>
             </div>
         )
     }
