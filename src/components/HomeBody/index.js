@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './style.css'
+import { Link } from 'react-router-dom'
 
 export default class HomeBody extends Component {
     render() {
@@ -7,20 +8,22 @@ export default class HomeBody extends Component {
             <div className="home-body">
                 <div className="question">WHO DO YOU WANNA MEET?</div>
                 <div className="home-options-container">
-                    <div
+                    <Link
+                        to="/producer"
                         className="home-option artist"
                         onMouseOver={() => this.props.changeTheme('ARTIST')}
                         onMouseOut={this.props.changeTheme}
                     >
                         artist/producer
-                    </div>
-                    <div
+                    </Link>
+                    <Link
+                        to="/programmer"
                         className="home-option programmer"
                         onMouseOver={() => this.props.changeTheme('PROGRAMMER')}
                         onMouseOut={this.props.changeTheme}
                     >
                         programmer
-                    </div>
+                    </Link>
                 </div>
             </div>
         )

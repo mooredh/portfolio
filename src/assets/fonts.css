@@ -1,11 +1,5 @@
-/* Sansita font */
-@import url('https://fonts.googleapis.com/css?family=Sansita');
-
-/* Noto Serif font */
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
-
-/* Open Sans font */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css?family=Sansita|Noto+Serif|Open+Sans');
 
 /* Sansation font */
 @font-face {

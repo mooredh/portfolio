@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Background from '../../components/Background/'
-import MainContent from '../../components/MainContent/'
+import HomeContent from '../../components/HomeContent'
 import pictureOne from '../../assets/images/one.jpg'
 import pictureTwo from '../../assets/images/two.jpg'
 import './style.css'
@@ -45,7 +45,7 @@ class HomePage extends Component {
                 <img src={this.state.currentPicture} alt="background" className="bg-image"/>
                 <Background className={`left ${this.state.bgClass}`} />
                 <Background className={`right ${this.state.bgClass}`} />
-                <MainContent theme={this.state.theme} changeTheme={this.changeTheme} />
+                <HomeContent theme={this.state.theme} changeTheme={this.changeTheme} />
             </div>
         );
     }
