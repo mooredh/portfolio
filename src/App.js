@@ -8,7 +8,7 @@ import ProgrammerPage from './screens/ProgrammerPage';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div>
           <Route exact path="/" component={HomePage} />
           <Route path="/about" component={AboutPage} />
